@@ -15,14 +15,13 @@ public class Dado {
         int numero;
         Random miRam= new Random();
         
-        public int Lanzar(){
-            do
-            {
-             numero=miRam.nextInt();
-            }while(numero<0 || numero>7); 
-            
-            return numero;
+        public void Lanzar(){
+        //do
+        //{
+            numero=miRam.nextInt(7);
+        
+        //}while(numero<0 ||numero>5);
         }
+        
 
-    
 }

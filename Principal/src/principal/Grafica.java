@@ -10,8 +10,8 @@ package principal;
  * @author labing506
  */
 public class Grafica extends javax.swing.JFrame {
-    
-    Grafica mig = new Grafica();
+    Dado dadoOneG=new Dado();
+    Dado dadoTwoG=new Dado();
 
     /**
      * Creates new form Grafica
@@ -29,7 +29,7 @@ public class Grafica extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        lan = new javax.swing.JButton();
         d2 = new javax.swing.JTextField();
         d1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -41,10 +41,10 @@ public class Grafica extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Lanzar");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        lan.setText("Lanzar");
+        lan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                lanMouseClicked(evt);
             }
         });
 
@@ -77,7 +77,7 @@ public class Grafica extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(149, 149, 149)
-                        .addComponent(jButton1)
+                        .addComponent(lan)
                         .addGap(26, 26, 26)
                         .addComponent(d2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -108,7 +108,7 @@ public class Grafica extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(78, 78, 78)
-                        .addComponent(jButton1))
+                        .addComponent(lan))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addComponent(d2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -139,11 +139,15 @@ public class Grafica extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_apActionPerformed
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void lanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lanMouseClicked
         
-
+        dadoOneG.Lanzar();
+        dadoTwoG.Lanzar();
+        
+        d1.setText(Integer.toString(dadoOneG.numero));
+        d2.setText(Integer.toString(dadoTwoG.numero));
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseClicked
+    }//GEN-LAST:event_lanMouseClicked
 
     /**
      * @param args the command line arguments
@@ -185,10 +189,10 @@ public class Grafica extends javax.swing.JFrame {
     private javax.swing.JTextField bill;
     private javax.swing.JTextField d1;
     private javax.swing.JTextField d2;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton lan;
     private javax.swing.JTextField men;
     // End of variables declaration//GEN-END:variables
 }
