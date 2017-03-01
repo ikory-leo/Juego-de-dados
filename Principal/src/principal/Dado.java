@@ -18,8 +18,8 @@ public class Dado {
         public int Lanzar(){
             do
             {
-                
-            }while(numero) 
+             numero=miRam.nextInt();
+            }while(numero<0 || numero>7); 
             
             return numero;
         }
