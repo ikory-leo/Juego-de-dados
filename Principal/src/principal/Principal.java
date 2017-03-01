@@ -16,11 +16,11 @@ public class Principal {
      */
     public static void main(String[] args) {
       Grafica miGraf = new Grafica();
-        Dado Dadeishon1= new Dado();
-        Dado Dadeishon2= new Dado();
-       miGraf.dadoOneG = Dadeishon1;
-       miGraf.dadoTwoG = Dadeishon2;
-       miGraf.setVisible(true);
+      Dado Dadeishon1= new Dado();
+      Dado Dadeishon2= new Dado();
+      miGraf.dadoOneG = Dadeishon1;
+      miGraf.dadoTwoG = Dadeishon2;
+      miGraf.setVisible(true);
         // TODO code application logic here
     }
     

@@ -16,11 +16,7 @@ public class Dado {
         Random miRam= new Random();
         
         public void Lanzar(){
-        //do
-        //{
             numero=miRam.nextInt(7);
-        
-        //}while(numero<0 ||numero>5);
         }
         
 

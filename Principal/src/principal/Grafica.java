@@ -12,6 +12,7 @@ package principal;
 public class Grafica extends javax.swing.JFrame {
     Dado dadoOneG=new Dado();
     Dado dadoTwoG=new Dado();
+    Jugador Jugador1=new Jugador();
 
     /**
      * Creates new form Grafica
@@ -48,9 +49,14 @@ public class Grafica extends javax.swing.JFrame {
             }
         });
 
-        d2.setText("jTextField1");
+        d2.setText("**************");
+        d2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                d2ActionPerformed(evt);
+            }
+        });
 
-        d1.setText("jTextField1");
+        d1.setText("*************");
 
         jLabel1.setText("Apuesta");
 
@@ -66,6 +72,11 @@ public class Grafica extends javax.swing.JFrame {
         });
 
         bill.setText("jTextField3");
+        bill.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                billActionPerformed(evt);
+            }
+        });
 
         men.setText("jTextField3");
 
@@ -148,6 +159,17 @@ public class Grafica extends javax.swing.JFrame {
         d2.setText(Integer.toString(dadoTwoG.numero));
         // TODO add your handling code here:
     }//GEN-LAST:event_lanMouseClicked
+
+    private void billActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_billActionPerformed
+        // TODO add your handling code here:
+        bill.setText(String.valueOf(Jugador1.billetera));
+        
+        
+    }//GEN-LAST:event_billActionPerformed
+
+    private void d2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_d2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_d2ActionPerformed
 
     /**
      * @param args the command line arguments
